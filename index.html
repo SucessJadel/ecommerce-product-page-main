@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="lightbox.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="images/logo.svg" alt="" /></a>
+
+      <ul id="navbar">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="icon">
+        <a href="#"><img id="cart" src="images/icon-cart.svg" alt="" /></a>
+        <a href="#"><img class="img" src="images/image-avatar.png" alt="" /></a>
+      </div>
+    </section>
+
+    <section id="hero">
+      <div class="shoe">
+        <img class="image1" src="images/image-product-1.jpg" alt="" />
+        <div class="thumbnail">
+          <a class="a" href="images/image-product-1.jpg" data-lightbox="models"
+            ><div class="selected image-box">
+              <img src="images/image-product-1-thumbnail.jpg" alt="" /></div
+          ></a>
+          <a class="a" href="images/image-product-2.jpg" data-lightbox="models">
+            <div class="image-box">
+              <img src="images/image-product-2-thumbnail.jpg" alt="" /></div
+          ></a>
+          <a class="a" href="images/image-product-3.jpg" data-lightbox="models"
+            ><div class="image-box">
+              <img src="images/image-product-3-thumbnail.jpg" alt="" /></div
+          ></a>
+          <a class="a" href="images/image-product-4.jpg" data-lightbox="models"
+            ><div class="image-box">
+              <img src="images/image-product-4-thumbnail.jpg" alt="" /></div
+          ></a>
+        </div>
+      </div>
+      <div class="popup">
+        <h4>Cart</h4>
+        <hr />
+        <ul id="buyItems">
+          <li class="popup-main">
+            <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+            <div class="popup-text">
+              <p>Fall Limited Edition Sneakers</p>
+              <p>$125.00 x 3 $<span id="sum-price">375.00</span></p>
+            </div>
+            <a href="#"><img src="/images/icon-delete.svg" alt="" /></a>
+          </li>
+        </ul>
+
+        <a href="#">
+          <button>Checkout</button>
+        </a>
+      </div>
+      <div class="details">
+        <h5>Sneaker Company</h5>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="num">
+          <h3>$125.00</h3>
+          <h5>50%</h5>
+        </div>
+        <h5 class="h5">$250.00</h5>
+        <div class="detailsfoot">
+          <div class="counter">
+            <img class="minus" src="images/icon-minus.svg" alt="" />
+            <h4 id="amount">0</h4>
+            <img class="plus" src="images/icon-plus.svg" alt="" />
+          </div>
+          <button>
+            <span><img src="images/icon-cart.svg" alt="" /></span>Add to cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="shopping-cart.js"></script>
+  </body>
+</html>
